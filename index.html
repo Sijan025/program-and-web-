@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgramAndWeb | Professional Web Solutions</title>
+    <!-- Using FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Program<span>AndWeb</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#contact" class="cta-btn">Get a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Professional Web Development</h1>
+            <p>We build modern, responsive, and high-performance websites tailored to your business needs.</p>
+            <a href="#contact" class="cta-btn">Start Your Project</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Everything you need to succeed online</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Custom websites built with the latest technologies like HTML, CSS, JS, and Python.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Websites that look great on desktops, tablets, and mobile phones.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>E-Commerce</h3>
+                    <p>Online stores setup to help you sell products and services globally.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO Optimization</h3>
+                    <p>Rank higher on Google with our basic SEO and performance optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Email Section -->
+    <section id="contact" class="section about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Ready to work with programandweb?</p>
+            </div>
+            <div class="contact-box">
+                <h3>Get in touch for a free quote</h3>
+                <p>Email us directly at:</p>
+                <!-- This displays the email based on the prompt -->
+                <a href="mailto:programandweb@gmail.com" class="email-display">
+                    programandweb@gmail.com
+                </a>
+                <p>We typically reply within 24 hours.</p>
+                <br>
+                <a href="mailto:programandweb@gmail.com" class="cta-btn">Send Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 ProgramAndWeb. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Smooth Scroll Script
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
